@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "api": "json-server --host 0.0.0.0 --watch db.json --port 10000"
+    "start": "react-scripts start",
+    "server": "node server.js",
+    "build": "react-scripts build",
+    "render-build": "npm run build && npm run server",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
